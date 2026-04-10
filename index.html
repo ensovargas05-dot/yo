@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>te amo</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            .contenedor {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+            }
+            video {
+        width: 100%;
+        height: 100%;
+     object-fit: cover;
+    }
+
+    .texto {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+        text-align: center;
+    }
+</style>
+    </head>
+<body>
+    <div class="contenedor">
+
+  <video autoplay loop muted>
+    <source src="./268562.mp4" type="video/mp4">
+  </video>
+
+  <div class="texto">
+    <h1>Siempre te he amado, pero nunca te lo dije</h1>
+    <input type="button" value="Solo quiero decirte" onclick="iniciarTodo()">
+    <p id="mensaje" class="mensaje">
+  Siempre fuiste tú… pero nunca fui yo para ti 💔
+</p>
+<p>Siempre me gustaste, solo que nunca fui lo suficientemente v
+    aliente para decirte todo lo que sentía. Me guardé muchas cosas por miedo, 
+    por no saber qué iba a pasar, y al final el tiempo siguió pasando…</p>
+    <p>
+        A veces me pongo a pensar en todo lo que pude haber dicho o hecho 
+        diferente, pero en ese momento simplemente no me salían las palabras. 
+        No era que no sintiera nada, al contrario, sentía demasiado y eso mismo 
+        me frenaba.
+    </p>
+    <p>
+        Quisiera poder volver el tiempo atrás y decirte todo lo que siento, 
+        pero sé que eso no es posible. Solo quiero que sepas que siempre te he amado, 
+        aunque nunca te lo haya dicho. Y aunque ahora estemos en caminos diferentes, 
+        siempre guardaré un lugar especial para ti en mi corazón.
+    </p>
+    <p>
+        A veces me pregunto si tú alguna vez sentiste lo mismo por mí, 
+        pero sé que eso es algo que nunca sabré. Lo importante es que ahora 
+        puedo decirte lo que siento, aunque sea tarde, y espero que puedas entenderlo.
+    </p>
+    <style>
+        .mensaje {
+            position: absolue;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 20px;
+            display: none;
+            text-align: center;
+        }
+    </style>
+   <audio id="musica" loop>
+  <source src="./Video Project.m4a" type="audio/mpeg">
+</audio>
+  </div>
+
+</div>
+<script>
+    function mostrarMensaje() {
+        document.getElementById("mensaje").style.display = "block";
+    }
+</script>
+<script>
+function iniciarTodo() {
+  document.getElementById("mensaje").style.display = "block";
+  document.getElementById("musica").play();
+}
+</script>
+</body>
+
+
+</html>
